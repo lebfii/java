@@ -1,0 +1,57 @@
+package labexm;
+
+import java.util.*;
+
+class TensPlaceComparator implements Comparator<Integer>{
+	
+	public int compare(Integer num1,Integer num2)
+	{
+		int tp1= (num1%100)/10;
+		int tp2 = (num2%100)/10;
+		
+		return Integer.compare(tp1, tp2);
+		
+	}
+}
+
+public class p2 {
+	public static void main(String[]args)
+	{
+		
+		int max = 1000;
+		int min = 100;
+		int count = 10;
+		
+		ArrayList<Integer> arr = new ArrayList<>();
+		
+		Random rand = new Random();
+		
+		for(int i = 0; i<count; i++)
+		{
+			int rint;
+			//rint = rand.nextInt(max-min)+min;
+			
+			do
+			{
+				rint = rand.nextInt(max-min)+min;
+			}
+			while(rint%2!=0 || rint%5!=0);
+			arr.add(rint);
+		
+		}
+		
+		System.out.println("Unsorted arr : ");
+		
+		for(int n : arr) System.out.println(n);
+		
+		arr.sort(new TensPlaceComparator());
+		
+		System.out.println("\nsorted arr : ");
+		
+		for(int n : arr) System.out.println(n);
+		
+		
+	}
+
+
+}
