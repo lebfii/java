@@ -1,0 +1,42 @@
+package labexm;
+
+import java.util.*;
+
+public class p1 {
+	public static void main(String[] args)
+	{
+		ArrayList<Integer> num = new ArrayList<>();
+		
+		num.add(4);
+		num.add(3);
+		num.add(2);
+		num.add(1);
+		num.add(1);
+		
+		System.out.println("NUM FROM ARRAY LIST : " + num);
+		
+		num.remove(4);
+		
+		System.out.println("NUM after removing from ARRAY LIST : " + num);
+		
+		Collections.sort(num);
+		
+		System.out.println("Nums after sorting: " + num);
+		
+		Integer[] arr = new Integer[(num.size())];
+		
+		arr=num.toArray(arr);
+		
+		System.out.println("numbers turnd to arr");
+		
+		for (int n:arr) {
+			
+			System.out.println(n);
+		}
+		
+ 		
+		
+		
+	}
+
+}
