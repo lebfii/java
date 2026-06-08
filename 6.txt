@@ -1,0 +1,46 @@
+package labexm;
+
+public class p6 {
+	
+	public static void main(String[] args)
+	{
+		StringBuffer str = new StringBuffer("Hello, ");
+		
+		System.out.println("String :" + str);
+		
+		System.out.println("Append :" + str.append("World"));
+		
+		System.out.println("Insert :" + str.insert(6, "Java"));
+		
+		System.out.println("Delete:" + str.delete(6,10));
+		
+		System.out.println("DeleteCharAt :" + str.deleteCharAt(5));
+		
+		System.out.println("Reverse : " + str.reverse());
+		
+		System.out.println("Capacity :" + str.capacity());
+		
+		str.setLength(5);
+		System.out.println("Set Length" + str);
+		
+		str.ensureCapacity(30);
+		System.out.println("EnsureCapacity :" + str);
+		
+		System.out.println("CharAt :" + str.charAt(4));
+		
+		System.out.println("index of :" + str.indexOf("H"));
+		
+		System.out.println("Substring:" + str.substring(0,4));
+		
+		System.out.println("replace :" + str.replace(0,4,"ghey"));
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+
+}
