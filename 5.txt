@@ -1,0 +1,45 @@
+package labexm;
+
+public class p5 {
+	
+	public static void main(String[]args)
+	{
+		String str = new String("Hello");
+		
+		System.out.println("Default String : " + str);
+		
+		System.out.println("First Character : " + str.charAt(0));
+		
+		System.out.println("Substring : "+ str.substring(0,3));
+		
+		String str1 = "Hello";
+		String str2 = "hello";
+		
+		System.out.println("equals cases :");
+		
+		boolean isEquals = str1.equals(str2);
+		System.out.println("isEquals" + isEquals);
+		
+		boolean equalsIC = str1.equalsIgnoreCase(str2);
+		System.out.println("equals ignore case : " + equalsIC);
+		
+		String st = new String("  the fox jumped over the dog  ");
+		
+		
+	
+		System.out.println("Index of fox :" + st.indexOf("fox"));
+		
+		System.out.println("Last Index of the :" + st.lastIndexOf("the"));
+		
+		System.out.println("Trimmed : " + st.trim());
+		
+		System.out.println("To lower case : " + str1.toLowerCase());
+		
+		System.out.println("To uppper case : " + str2.toUpperCase());
+		
+		System.out.println("Replace" + st.replace('o','0'));
+ 		
+		
+	}
+	
+}
